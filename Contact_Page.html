@@ -1,0 +1,47 @@
+<html>
+<head><title>Contact Page</title></head>
+<body bgcolor=Olive " bgproperties=fixed>
+<h1 align=center>Contact Us</h1>
+<img src="./CiTi.png" alt="Paris" class="center">
+<body>
+<form>
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<table style="max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+<tr> <td>
+<label for="Name">Name*:</label>
+</td> <td>
+<input name="Name" type="text" maxlength="60" style="max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="PhoneNumber">Phone number:</label>
+</td> <td>
+<input name="PhoneNumber" type="text" maxlength="43" style="max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="FromEmailAddress">Email address*:</label>
+</td> <td>
+<input name="FromEmailAddress" type="text" maxlength="90" style="max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="Comments">Comments*:</label>
+</td> <td>
+<textarea name="Comments" rows="7" cols="40" style="max-width:350px;"></textarea>
+</td> </tr> <tr> <td>
+* - required fields
+</td> <td>
+<div style="float:right"><a href="mailto:siviweulana@yahoo.com" id="lnk100" title="form to email">Send Form</a></div>
+
+
+</td> </tr>
+</table>
+</form>
+<p>To get hold of us via social media click on the following links.</p>
+<p><a href="https://web.facebook.com/Samfactor">Facebook</a><br /></p>
+<p><a href="https://www.instagram.com/siviwe_ulana/">Instagram</a><br /></p>
+<p><a href="https://twitter.com/profile">Twitter</a><br /></p>
+</body>
+</html>
